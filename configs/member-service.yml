@@ -43,8 +43,18 @@ springdoc:
 
 # cors 설정
 cors:
-  allowed: https://pintech.koreait.xyz, http://localhost:3000
+  allowed: https://pintech.koreait.xyz,http://localhost:3000
 
 # 프론트 엔드 도메인
 front:
-  domain: https://pintech.koreait.xyz,http://localhost:300
+  domain: https://pintech.koreait.xyz,http://localhost:3000
+
+# 유레카 설정
+eureka:
+  instance:
+    hostname: ${hostname}
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: ${eureka.server}/eureka/
