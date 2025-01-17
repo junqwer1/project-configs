@@ -13,7 +13,3 @@ spring:
 file:
   upload.path: ${file.path}
   upload.url: ${file.url}
-
-# cors 설정
-cors:
-  allowed: https://pintech.koreait.xyz,http://localhost:3000
