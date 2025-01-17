@@ -1,15 +1,15 @@
 spring:
   # 데이터 베이스 설정
   datasource:
-    driverClassName: oracle.jdbc.driver.OracleDriver
-    url: jdbc:oracle:thin:@${db.host}:XE
-    username: ${db.username}
-    password: ${db.password}
+    driverClassName: org.h2.Driver
+    url: jdbc:h2:mem:test
+    username: sa
+    password:
   jpa:
     hibernate:
       ddlAuto: update
 
 # 파일 업로드 경로
 file:
-  upload.path: ${file.path}
-  upload.url: ${file.url}
+  upload.path: D:/uploads/
+  upload.url: /uploads/
