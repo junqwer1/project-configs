@@ -9,6 +9,7 @@ spring:
     username: ${db.username}
     password: ${db.password}
 
+
   # JPA 설정
   jpa:
     properties:

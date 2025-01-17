@@ -1,0 +1,15 @@
+spring:
+  # 데이터 베이스 설정
+  datasource:
+    driverClassName: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@${db.host}:XE
+    username: ${db.username}
+    password: ${db.password}
+  jpa:
+    hibernate:
+      ddlAuto: update
+
+# 파일 업로드 경로
+file:
+  upload.path: ${file.path}
+  upload.url: ${file.url}
